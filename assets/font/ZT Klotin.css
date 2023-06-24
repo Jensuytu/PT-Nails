@@ -1,0 +1,12 @@
+/* Webfont: ZTKlotin-Regular */
+@font-face {
+    font-family: "ZTKlotin";
+    src: url("ZT Klotin.eot"); /* IE9 Compat Modes */
+    src: url("ZT Klotin.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("ZT Klotin.woff") format("woff"),
+        /* Modern Browsers */ url("ZT Klotin.woff2") format("woff2"),
+        /* Modern Browsers */ url("ZT Klotin.ttf") format("truetype"); /* Safari, Android, iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
