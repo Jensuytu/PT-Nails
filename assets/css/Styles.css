@@ -224,10 +224,13 @@ img {
     margin: 10em 0 3em 0;
     column-gap: 6em;
 }
+
+.service-list p {
+}
 .service-list__item {
     flex-shrink: 0;
     width: 295px;
-    height: 360px;
+    min-height: 400px;
     background-color: #ffff;
     border-radius: 47% 47% 0 0;
     display: flex;

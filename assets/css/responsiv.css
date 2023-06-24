@@ -75,6 +75,9 @@
         row-gap: 6em;
         column-gap: 1em;
     }
+    .service-list__item:last-child {
+        grid-column: 1/-1;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 767px) {
