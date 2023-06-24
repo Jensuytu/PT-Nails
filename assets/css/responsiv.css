@@ -140,9 +140,10 @@
         max-width: 100%;
         max-height: 500px;
         border-radius: 16px;
+        max-width: unset;
     }
     /* contact */
     iframe {
-        height: 90vh;
+        height: 75vh;
     }
 }

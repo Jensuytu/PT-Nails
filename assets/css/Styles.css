@@ -108,6 +108,7 @@ img {
     left: 0;
     right: 0;
     border-radius: 0 0 30px 30px;
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.1);
 }
 
 .navbar__link {
@@ -219,7 +220,7 @@ img {
 
 /* services */
 .service {
-    padding: 15em 0;
+    padding: 15em 0 1em 0em;
     background-color: var(--secondary-color);
 }
 .service-list {
@@ -229,8 +230,6 @@ img {
     column-gap: 6em;
 }
 
-.service-list p {
-}
 .service-list__item {
     flex-shrink: 0;
     width: 295px;
