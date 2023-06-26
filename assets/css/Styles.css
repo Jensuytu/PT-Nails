@@ -165,11 +165,114 @@ img {
 }
 .header-content__img {
     grid-area: img;
-    max-height: 620px;
-    max-width: 543px;
+    height: 620px;
+    width: 543px;
     border-radius: 999px 999px 0 0;
     overflow: hidden;
+    position: relative;
 }
+.header-content__img--item1,
+.header-content__img--item2,
+.header-content__img--item3,
+.header-content__img--item4 {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: zoom-out 3s linear infinite;
+    transition: ease 3s linear;
+}
+
+@keyframes zoom-out {
+    100% {
+        width: 200%;
+    }
+}
+
+/* animation */
+.header-content__img--item1 {
+    animation: slide1 8s linear infinite;
+}
+.header-content__img--item2 {
+    animation: slide2 8s linear infinite;
+}
+.header-content__img--item3 {
+    animation: slide3 8s linear infinite;
+}
+.header-content__img--item4 {
+    animation: slide4 8s linear infinite;
+}
+
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
 .header-content__time {
     grid-area: time;
     border-radius: 110px 0px;

@@ -84,6 +84,7 @@
     .header-content {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
         grid-template-areas:
             "header"
             "desc"
@@ -95,8 +96,8 @@
         margin-bottom: 1em;
     }
     .header-content__img {
-        height: 450px;
-        /* margin: 2em; */
+        height: 500px;
+        width: 100%;
         margin-bottom: 1.5em;
     }
     .header-content__desc {
@@ -106,10 +107,6 @@
     .header-content__about {
         display: none;
     }
-    /* über uns */
-    /* .aboutus {
-        padding: 10em 0;
-    } */
     .about-us__content {
         display: flex;
         flex-direction: column;
@@ -145,5 +142,11 @@
     /* contact */
     iframe {
         height: 75vh;
+    }
+
+    /* footer */
+    .footer-list {
+        display: flex;
+        flex-direction: column;
     }
 }
