@@ -175,18 +175,18 @@ img {
 .header-content__img--item2,
 .header-content__img--item3,
 .header-content__img--item4 {
-    width: 100%;
+    width: 10%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
     animation: zoom-out 3s linear infinite;
-    transition: ease 3s linear;
+    transition: 0.25s ease;
 }
 
 @keyframes zoom-out {
     100% {
-        width: 200%;
+        width: 100%;
     }
 }
 
