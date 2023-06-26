@@ -175,13 +175,13 @@ img {
 .header-content__img--item2,
 .header-content__img--item3,
 .header-content__img--item4 {
+    position: absolute;
     width: 120%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
     animation: zoom-out 3s linear infinite;
-    transition: 0.25s ease;
+    transition: ease 0.25s;
 }
 
 @keyframes zoom-out {
@@ -192,16 +192,16 @@ img {
 
 /* animation */
 .header-content__img--item1 {
-    animation: slide1 5s linear infinite;
+    animation: slide1 8s linear infinite;
 }
 .header-content__img--item2 {
-    animation: slide2 5s linear infinite;
+    animation: slide2 8s linear infinite;
 }
 .header-content__img--item3 {
-    animation: slide3 5s linear infinite;
+    animation: slide3 8s linear infinite;
 }
 .header-content__img--item4 {
-    animation: slide4 5s linear infinite;
+    animation: slide4 8s linear infinite;
 }
 
 @keyframes slide1 {
