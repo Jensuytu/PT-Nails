@@ -192,16 +192,16 @@ img {
 
 /* animation */
 .header-content__img--item1 {
-    animation: slide1 8s linear infinite;
+    animation: slide1 5s linear infinite;
 }
 .header-content__img--item2 {
-    animation: slide2 8s linear infinite;
+    animation: slide2 5s linear infinite;
 }
 .header-content__img--item3 {
-    animation: slide3 8s linear infinite;
+    animation: slide3 5s linear infinite;
 }
 .header-content__img--item4 {
-    animation: slide4 8s linear infinite;
+    animation: slide4 5s linear infinite;
 }
 
 @keyframes slide1 {
