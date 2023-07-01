@@ -449,6 +449,7 @@ img {
     border-radius: 999px 50px 50px 999px;
     background-color: var(--adding-color-1);
     font-size: 1.6rem;
+    box-shadow: 9px 0px 31px 0px rgba(0, 0, 0, 0.15);
 }
 
 .personal__content--box {
@@ -522,7 +523,14 @@ img {
     justify-content: center;
     align-items: center;
 }
-
+.contact__content {
+    display: flex;
+    flex-direction: column;
+}
+.contact__content strong {
+    display: inline-block;
+    margin-top: 2em;
+}
 iframe {
     margin-top: 5em;
     width: 100%;
