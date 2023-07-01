@@ -192,16 +192,16 @@ img {
 
 /* animation */
 .header-content__img--item1 {
-    animation: slide1 8s linear infinite;
+    animation: slide1 5s linear infinite;
 }
 .header-content__img--item2 {
-    animation: slide2 8s linear infinite;
+    animation: slide2 5s linear infinite;
 }
 .header-content__img--item3 {
-    animation: slide3 8s linear infinite;
+    animation: slide3 5s linear infinite;
 }
 .header-content__img--item4 {
-    animation: slide4 8s linear infinite;
+    animation: slide4 5s linear infinite;
 }
 
 @keyframes slide1 {
@@ -357,9 +357,58 @@ img {
 }
 /* preis */
 .preis {
-    height: 1000px;
     padding: 15em 0;
     background-color: var(--secondary-color);
+}
+.preis-list {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+    padding: 2em;
+    /* justify-items: center; */
+}
+
+.preis-unter-title {
+    font-family: "ZTKlotin";
+    font-size: 4.4rem;
+    color: var(--primary-color);
+    margin: 1.5em 0 0em 0;
+    text-align: center;
+}
+.preis-item {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+}
+.preis-item__line {
+    height: 4px;
+    border-top: 1px dotted var(--adding-color-1);
+    width: 70%;
+    align-self: flex-end;
+}
+.preis-item:last-child {
+    grid-column: 1/-1;
+}
+.preis-item__header {
+    font-family: "ZTKlotin";
+    font-size: 3.2rem;
+    color: var(--primary-color);
+    margin: 0em 0 1em 0;
+}
+.preis-item__amount,
+.preis-item__desc {
+    text-align: left;
+    align-self: flex-end;
+    margin: 0 1.2em;
+}
+
+.preis-item__content {
+    display: flex;
+    justify-content: space-between;
 }
 /* experten */
 .experten {
@@ -432,9 +481,6 @@ img {
 /* gallerie*/
 .gallerie {
     padding: 15em 0 15em 0;
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
 }
 .gallerie__desc {
     margin-bottom: 5em;
@@ -445,8 +491,6 @@ img {
     border-radius: 30px;
 }
 .gallerie-list {
-    /* display: flex;
-    align-content: center; */
     width: 500px;
     height: 100vw;
     transform: rotate(-90deg) translateY(-500px);

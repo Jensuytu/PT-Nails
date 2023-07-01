@@ -78,6 +78,18 @@
     .service-list__item:last-child {
         grid-column: 1/-1;
     }
+    .header-content__about {
+        width: 310px;
+        height: 300px;
+        margin-bottom: 2em;
+        border-radius: 0 140px;
+        /* align-self: flex-end; */
+        justify-self: flex-end;
+    }
+    .header-content__img {
+        max-width: 400px;
+        height: 100%;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -130,7 +142,16 @@
         align-items: center;
         gap: 6em;
     }
-
+    /* preis */
+    .preis-list {
+        grid-template-columns: 1fr;
+    }
+    .preis-item__amount,
+    .preis-item__desc {
+        text-align: left;
+        align-self: flex-end;
+        margin: 0 0.5em;
+    }
     /* gallerie */
     .gallerie-list {
         display: block;
